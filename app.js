@@ -7,13 +7,16 @@ require('dotenv-flow').config();
 // Config variable
 const { PORT, NODE_ENV } = process.env;
 
-// Init serv
+// Initialisation du serveur
 const app = express();
 
-// Add routing
+// Ajout d'un Middleware pour gérer les données JSON reçu
+app.use(express.json());
+
+// Ajout du system de routing
 app.use('/api/v1', router);
 
-// Start serv
+// Demarrage du serveur API
 app.listen(PORT, () => {
     console.log(`Server API up on port ${PORT} [${NODE_ENV}]`);
 });
