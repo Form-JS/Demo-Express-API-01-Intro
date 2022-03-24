@@ -1,0 +1,37 @@
+{
+  "name": "demo-express-api-01-intro",
+  "version": "0.1.0",
+  "description": "Demo d'un server Restfull API",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "dev": "cross-env NODE_ENV=development nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Form-JS/Demo-Express-API-01-Intro.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "API"
+  ],
+  "author": "Aurélien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Form-JS/Demo-Express-API-01-Intro/issues"
+  },
+  "homepage": "https://github.com/Form-JS/Demo-Express-API-01-Intro#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv-flow": "^3.2.0",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
